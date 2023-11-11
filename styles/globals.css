@@ -77,29 +77,39 @@ footer {
   text-align: center;
 }
 
-.mail-link {
+footer * .gradient-text {
   color: rgba(0,0,0,0);
+
+  opacity: 1;
+
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+footer * .follow-gradient-text {
   background: linear-gradient(90deg,#3c1df2,#b5379c);
+
   background-clip: text;
   -webkit-text-fill-color: rgba(0,0,0,.0001);
   -webkit-background-clip: text;
-  opacity: 1;
-
-  font-weight: 600;
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
 }
 
-.socialLinksText {
-  color: rgba(0,0,0,0);
+footer * .contact-gradient-text {
   background: linear-gradient(90deg,#c93e86,#f36226);
+
   background-clip: text;
   -webkit-text-fill-color: rgba(0,0,0,.0001);
   -webkit-background-clip: text;
-  opacity: 1;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
 }
 
+footer > p, footer > span {
+  font-size: clamp(1.2rem, 2vw, 3.5rem);
+}
+
+footer * .footer-gradients-separator {
+  font-weight: 600;
+  font-size: clamp(1rem, 1.8vw, 2.8rem);
+}
 
 /*
   320px — 480px: Mobile devices
