@@ -21,10 +21,23 @@
     z-index: 5;
 }
 
+.cookieModal .btn {
+    font-size: clamp(0.8rem, 0.75vw, 8rem);
+}
+
 .cookieModal p {
-    font-family: Roboto, "Open Sans", Arial, Helvetica;
-    font-size: clamp(0.8rem, 0.7vw, 8rem);
+    font-family: "Open Sans", Arial, Helvetica;
+    font-size: clamp(0.8rem, 0.75vw, 8rem);
     line-height: 1.42;
     text-align: center;
     color: #04060a;
+}
+
+.cookieModal h6 {
+    font-family: "Open Sans", Arial, Helvetica;
+    font-size: clamp(0.8rem, 0.85vw, 8rem);
+    line-height: 1.42;
+    text-align: center;
+    color: #04060a;
+    margin-bottom: 0.85rem;
 }

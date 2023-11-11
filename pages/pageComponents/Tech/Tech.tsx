@@ -8,7 +8,7 @@ import recs from "../../../public/imgs/TechRectangles/rectangle-blood-dragon-no-
 
 function Tech() {
   return (
-    <section>
+    <section id='Technologies'>
         <Image
             src={ recs }
             alt="Decorative Rectangle 1"

@@ -10,7 +10,7 @@ import Blob3 from "../../../public/imgs/Blobs/blob3.svg"
 
 function Hero() {
   return (
-    <section style={{ padding: "0 20vw", position: "relative", height: "100vh", overflow: "hidden" }}>
+    <section id='Home' style={{ padding: "0 20vw", position: "relative", height: "100vh", overflow: "hidden" }}>
         <Image
             priority
             src={ BG }
