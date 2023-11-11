@@ -1,4 +1,6 @@
 import '@styles/globals.css'
+import "@styles/Footer.css"
+import "@styles/Header.css"
 
 import { Poppins } from "next/font/google";
 
