@@ -1,0 +1,8 @@
+.btn {
+    border-radius: 10px;
+    padding: 0.44rem 0.66rem;
+}
+
+.btn:hover {
+    filter: brightness(115%);
+}
