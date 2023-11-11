@@ -13,7 +13,7 @@ interface props {
 function ButtonLink( props: props ) {
   return (
     <Link
-      href={ props.href }
+      href={ props.href ?? '' }
       target={ props.target }
       style={{ backgroundColor: props.bgColor, color: props.color }}
       className={ styles.btn }

@@ -39,13 +39,13 @@ function Project(props: props) {
             </div>
 
             <div style={{ backgroundColor: props.bgColor }} className={ `${styles.imgBubble} ${props.imgOrientation === "landscape" ? styles.landscape : styles.portrait}` }>
-                <Link href={ props.url } target="_blank" >
+                <Link href={ props.url ?? '' } target="_blank" >
                     <Image src={ `/imgs/Projects/${ props.img }` } alt={ props.imgAlt } width={ props.imgWidth } height={ props.imgHeight } />
                 </Link>
 
                 <div className={ styles.linksWrapper }>
                     <ButtonLink
-                        href={ props.url }
+                        href={ props.url ?? '' }
                         target="_blank"
                         bgColor={ props.fgColor }
                         color={ props.fgTextColor }
@@ -54,7 +54,7 @@ function Project(props: props) {
                     </ButtonLink>
 
                     <ButtonLink
-                        href={ props.repo }
+                        href={ props.repo ?? '' }
                         target="_blank"
                         bgColor={ props.fgColor }
                         color={ props.fgTextColor }
