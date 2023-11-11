@@ -21,16 +21,16 @@ function Footer() {
           </div>
 
           <div className="d-flex align-items-center justify-content-center gap-3" >
-            <Link href="mailto:reyas.hey@gmail.com">
-              <FaEnvelopeSquare size={50} fill="url(#SvgGradient1)" />
+            <Link href="mailto:reyas.hey@gmail.com" aria-label="Email link">
+              <FaEnvelopeSquare size={50} fill="url(#SvgGradient1)"/>
             </Link>
-            <Link href="https://www.linkedin.com/in/leandro-bonaccorso-8976a0237" target="_blank">
+            <Link href="https://www.linkedin.com/in/leandro-bonaccorso-8976a0237" target="_blank" aria-label="Linkedin link">
               <FaLinkedin size={50} fill="url(#SvgGradient2)" />
             </Link>
-            <Link href="https://github.com/ReyasHey" target="_blank">
+            <Link href="https://github.com/ReyasHey" target="_blank" aria-label="Github link">
               <FaSquareGithub size={50} fill="url(#SvgGradient3)" />
             </Link>
-            <Link href="https://twitter.com/ReyasHey" target="_blank">
+            <Link href="https://twitter.com/ReyasHey" target="_blank" aria-label="Twitter">
               <FaSquareXTwitter size={50} fill="url(#SvgGradient4)" />
             </Link>
           </div>

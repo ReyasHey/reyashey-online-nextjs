@@ -22,7 +22,9 @@ function CookiesPopup() {
           !consentIsSet
           &&
           <div className={ cookiesClasses.cookieModal + ` row ` }>
-              <h6>We use Cookies</h6>
+              <header>
+                  <p className={ cookiesClasses.cookieTitle }>We use Cookies</p>
+              </header>
 
               <p>
                   We use cookies to improve user experience and analyze website traffic.

@@ -25,7 +25,7 @@
     font-size: clamp(0.8rem, 0.75vw, 8rem);
 }
 
-.cookieModal p {
+.cookieModal > p {
     font-family: "Open Sans", Arial, Helvetica;
     font-size: clamp(0.8rem, 0.75vw, 8rem);
     line-height: 1.42;
@@ -33,7 +33,7 @@
     color: #04060a;
 }
 
-.cookieModal h6 {
+.cookieTitle {
     font-family: "Open Sans", Arial, Helvetica;
     font-size: clamp(0.8rem, 0.85vw, 8rem);
     line-height: 1.42;
