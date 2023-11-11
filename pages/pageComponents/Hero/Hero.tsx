@@ -10,12 +10,12 @@ import Blob3 from "../../../public/imgs/Blobs/blob3.svg"
 
 function Hero() {
   return (
-    <section style={{ padding: "0 20vw", position: "relative", height: "100vh", overflow: "hidden" }}>
+    <section id='Home' style={{ padding: "0 20vw", position: "relative", height: "100vh", overflow: "hidden" }}>
         <Image
             priority
             src={ BG }
             alt="Main Background Image"
-            style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%", zIndex: "-1" }}
+            style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%", zIndex: "-10" }}
         />
 
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "40vw", height: "100%", paddingBottom: "10vh" }}>
@@ -47,7 +47,7 @@ function Hero() {
         />
 
         <Image src={ Blob2 } alt="Morphing Blob 1"
-            style={{ position: "absolute", top: "33vh", left: "44vw", width: "14rem", height: "fit-content", filter: "blur(5px)", zIndex: "-1" }}
+            style={{ position: "absolute", top: "33vh", left: "44vw", width: "14rem", height: "fit-content", filter: "blur(5px)", zIndex: "-8" }}
         />
 
         <Image src={ Blob1 } alt="Morphing Blob 1"

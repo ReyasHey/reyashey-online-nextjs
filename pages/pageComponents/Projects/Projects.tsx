@@ -7,7 +7,7 @@ import Project from './Project/Project'
 
 function Projects() {
   return (
-    <section style={{ position: "relative", padding: "5vw 0 1rem 0" }}>
+    <section id='Projects' style={{ position: "relative", padding: "5vw 0 1rem 0" }}>
         <Image
           src={ BG }
           alt="Projects Background Image"
