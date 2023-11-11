@@ -24,11 +24,15 @@ h1 {
   font-size: clamp(4.5rem, 8vw, 40rem);
   line-height: clamp(5rem, 7.9vw, 40rem);
   margin: 2rem;
+
+  font-weight: 700;
 }
 
 h2 {
   font-size: clamp(4.5rem, 8vw, 40rem);
   line-height: clamp(5rem, 7.9vw, 40rem);
+
+  font-weight: 700;
 }
 
 h3 {
@@ -56,6 +60,46 @@ a {
 li {
   list-style: none;
 }
+
+.btn {
+  transition-duration: 0ms;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0b0b0b;
+  padding: 10% 3% 20% 3%;
+  margin: 0;
+  max-height: 100vh;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.mail-link {
+  color: rgba(0,0,0,0);
+  background: linear-gradient(90deg,#3c1df2,#b5379c);
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,.0001);
+  -webkit-background-clip: text;
+  opacity: 1;
+
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.socialLinksText {
+  color: rgba(0,0,0,0);
+  background: linear-gradient(90deg,#c93e86,#f36226);
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,.0001);
+  -webkit-background-clip: text;
+  opacity: 1;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
 
 /*
   320px — 480px: Mobile devices
