@@ -14,7 +14,7 @@ export default function Page() {
     Cookies.remove("Test")
 
     console.warn("Set and Removed Cookies");
-  })
+  }, [])
 
 
   return (
