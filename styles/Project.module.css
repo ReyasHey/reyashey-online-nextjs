@@ -1,0 +1,67 @@
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    /* height: 90vh; */
+    margin-bottom: 10%;
+}
+
+.textBubble {
+    border-radius: 15px;
+    width: 30%;
+    height: fit-content;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+}
+
+.imgBubble {
+    border-radius: 15px;
+    height: fit-content;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+}
+
+.imgBubble.landscape {
+    margin-top: 7%;
+    width: 40%;
+}
+
+.imgBubble.portrait {
+    margin-top: 5%;
+    width: 30%;
+}
+
+.imgBubble > a {
+    width: 100%;
+    height: fit-content;
+}
+
+.imgBubble img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    /* This because there will always be a weird carriage return, hence blank space at the bottom */
+    margin-bottom: -0.5em;
+}
+
+.imgBubble .linksWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.2rem 0 0.5rem 0;
+}
+
+@media screen and (max-width: 480px) {
+    .textBubble {
+        width: 80%;
+    }
+
+    .imgBubble.landscape {
+        width: 80%;
+    }
+
+    .imgBubble.portrait {
+        width: 80%;
+    }
+}

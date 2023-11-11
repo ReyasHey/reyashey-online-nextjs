@@ -1,0 +1,16 @@
+.heroImg {
+    position: absolute;
+    top: 0;
+    right: calc(25vw - 15vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .heroImg {
+        right: calc(15vw - 22vh);
+    }
+}
