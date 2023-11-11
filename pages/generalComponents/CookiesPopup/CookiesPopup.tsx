@@ -11,14 +11,8 @@ function CookiesPopup() {
         setConsentIsSet(isConsentSet)
     }, [])
 
-    useEffect(() => {
-        console.log(consentIsSet)
-    }, [consentIsSet])
-
-
     function handleSetGtagConsent(isGranted: boolean){
         const resConsent = SetGtagConsent(isGranted)
-        console.log(resConsent)
         setConsentIsSet(true)
     }
 

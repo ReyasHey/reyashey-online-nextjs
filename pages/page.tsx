@@ -9,14 +9,6 @@ import Header from '../components/Header';
 
 export default function Page() {
 
-  useEffect(() => {
-    Cookies.set("Test", "theseNuts")
-    Cookies.remove("Test")
-
-    console.warn("Set and Removed Cookies");
-  }, [])
-
-
   return (
     <main>
 
