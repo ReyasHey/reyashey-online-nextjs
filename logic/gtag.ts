@@ -3,7 +3,7 @@ import ReactGA from "react-ga4";
 
 export function InitGtag(){
 
-    if(Cookies.get("gtagConsentGranted") != "true")
+    if(Cookies.get("gtagConsentGranted") == "false")
         return false
 
     if (process.env.NODE_ENV !== "production")
