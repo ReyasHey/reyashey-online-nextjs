@@ -4,20 +4,27 @@ import { InitGtag, SetGtagConsent } from "../../../logic/gtag"
 
 function CookiesPopup() {
 
-    const [showPopup, setShowPopup] = useState<boolean>(true)
+    const [consentIsSet, setConsentIsSet] = useState<boolean>(true)
 
     useEffect(() => {
-        const resConsent = InitGtag()
-        setShowPopup(resConsent)
-    })
+        const isConsentSet = InitGtag()
+        setConsentIsSet(isConsentSet)
+    }, [])
+
+    function handleSetGtagConsent(isGranted: boolean){
+        const resConsent = SetGtagConsent(isGranted)
+        setConsentIsSet(true)
+    }
 
     return (
       <>
         {
-          showPopup
+          !consentIsSet
           &&
           <div className={ cookiesClasses.cookieModal + ` row ` }>
-              <h6>We use Cookies</h6>
+              <header>
+                  <p className={ cookiesClasses.cookieTitle }>We use Cookies</p>
+              </header>
 
               <p>
                   We use cookies to improve user experience and analyze website traffic.
@@ -28,8 +35,8 @@ function CookiesPopup() {
               </p>
 
               <div className="d-flex justify-content-center gap-3 mt-3">
-                  <button type="button" className="btn btn-success mx-2 px-3 py-1" onClick={() => SetGtagConsent(true)}>Accept</button>
-                  <button type="button" className="btn btn-link" onClick={() => SetGtagConsent(false)}>Decline</button>
+                  <button type="button" className="btn btn-success mx-2 px-3 py-1" onClick={() => handleSetGtagConsent(true)}>Accept</button>
+                  <button type="button" className="btn btn-link" onClick={() => handleSetGtagConsent(false)}>Decline</button>
                   <button type="button" className="btn btn-link">Cookie Policy &gt;</button>
               </div>
           </div>
