@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import styles from "@styles/Hero.module.css"
 
-import ReyasAvatar from "../../../public/imgs/Reyas-avatar.webp"
-import BG from "../../../public/imgs/BGs/heroBG.webp"
+import ReyasAvatar from "../../../../public/imgs/Reyas-avatar.webp"
 
-import Blob1 from "../../../public/imgs/Blobs/blob1.svg"
-import Blob2 from "../../../public/imgs/Blobs/blob2.svg"
-import Blob3 from "../../../public/imgs/Blobs/blob3.svg"
+import BG from "../../../../public/imgs/BGs/heroBG.webp"
+
+import Blob1 from "../../../../public/imgs/Blobs/blob1.svg"
+import Blob2 from "../../../../public/imgs/Blobs/blob2.svg"
+import Blob3 from "../../../../public/imgs/Blobs/blob3.svg"
 
 function Hero() {
   return (

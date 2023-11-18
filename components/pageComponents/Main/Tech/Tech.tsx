@@ -1,16 +1,15 @@
 import Image from 'next/image';
-import SectionTitle from '../../generalComponents/SectionTitle/SectionTitle'
 import Technology from './Technology/Technology'
 
-// import recs from "../../../public/imgs/TechRectangles/rectangle-blood-dragon.svg"
-import recs from "../../../public/imgs/TechRectangles/rectangle-blood-dragon-no-opacity.svg"
+import rectangles from "../../../../public/imgs/TechRectangles/rectangle-blood-dragon-no-opacity.svg"
+import SectionTitle from '@components/generalComponents/SectionTitle/SectionTitle';
 
 
 function Tech() {
   return (
     <section id='Technologies'>
         <Image
-            src={ recs }
+            src={ rectangles }
             alt="Decorative Rectangle 1"
             style={{ width: "100%", zIndex: "-1000000", marginTop: "-5rem", position: "relative", filter: "brightness(98%)" }}
         />
@@ -28,7 +27,7 @@ function Tech() {
         </div>
 
         <Image
-            src={ recs }
+            src={ rectangles }
             alt="Decorative Rectangle 1"
             style={{ width: "100%", zIndex: "-1000000", marginBottom: "-5rem", position: "relative", transform: "rotate(180deg)", filter: "brightness(98%)" }}
         />

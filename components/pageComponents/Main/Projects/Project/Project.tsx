@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from "next/link";
 
 import styles from "@styles/Project.module.css"
+import ButtonLink from "@components/generalComponents/ButtonLink/ButtonLink";
 
-import ButtonLink from "../../../generalComponents/ButtonLink/ButtonLink";
 
 interface props {
     // General Settings
