@@ -1,7 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import { useState } from 'react';
 
-
 export default function Document() {
 
 const [bootstrapRel, setBootstrapRel] = useState<string>("stylesheet")

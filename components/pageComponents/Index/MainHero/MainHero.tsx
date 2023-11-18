@@ -9,7 +9,7 @@ import Blob1 from "../../../../public/imgs/Blobs/blob1.svg"
 import Blob2 from "../../../../public/imgs/Blobs/blob2.svg"
 import Blob3 from "../../../../public/imgs/Blobs/blob3.svg"
 
-function Hero() {
+function MainHero() {
   return (
     <section id='Home' style={{ padding: "0 20vw", position: "relative", height: "100vh", overflow: "hidden" }}>
         <Image
@@ -59,4 +59,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default MainHero

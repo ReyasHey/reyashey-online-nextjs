@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import navBlob from "../public/imgs/Blobs/NavBlob.svg"
+import navBlob from "../../../public/imgs/Blobs/NavBlob.svg"
 
 function Header() {
   return (
