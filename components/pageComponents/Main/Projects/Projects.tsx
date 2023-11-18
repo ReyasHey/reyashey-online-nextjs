@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import BG from "../../../public/imgs/BGs/projectsBG.webp"
+import BG from "../../../../public/imgs/BGs/projectsBG.webp"
 
-import SectionTitle from '../../generalComponents/SectionTitle/SectionTitle'
 import Project from './Project/Project'
+import SectionTitle from '@components/generalComponents/SectionTitle/SectionTitle'
 
 function Projects() {
   return (

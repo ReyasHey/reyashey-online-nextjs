@@ -1,8 +1,10 @@
-import Header from '@components/Header'
-import Hero from '@components/pageComponents/Hero/Hero'
-import Projects from '@components/pageComponents/Projects/Projects'
-import Tech from '@components/pageComponents/Tech/Tech'
 import Head from 'next/head'
+
+import Header from '@components/Header'
+
+import Hero from './Hero/Hero'
+import Tech from './Tech/Tech'
+import Projects from './Projects/Projects'
 
 export default function Page() {
 
