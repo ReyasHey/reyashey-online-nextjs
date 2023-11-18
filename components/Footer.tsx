@@ -1,7 +1,8 @@
-import SectionTitle from "../pages/generalComponents/SectionTitle/SectionTitle"
 import { FaSquareXTwitter, FaLinkedin, FaSquareGithub } from 'react-icons/fa6';
 import { FaEnvelopeSquare } from 'react-icons/fa';
 import Link from "next/link";
+
+import SectionTitle from './generalComponents/SectionTitle/SectionTitle';
 
 function Footer() {
   return (

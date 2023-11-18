@@ -1,11 +1,8 @@
+import Header from '@components/Header'
+import Hero from '@components/pageComponents/Hero/Hero'
+import Projects from '@components/pageComponents/Projects/Projects'
+import Tech from '@components/pageComponents/Tech/Tech'
 import Head from 'next/head'
-
-import Hero from './pageComponents/Hero/Hero';
-import Projects from './pageComponents/Projects/Projects';
-import Tech from './pageComponents/Tech/Tech';
-import { useEffect } from 'react';
-import Cookies from 'js-cookie';
-import Header from '../components/Header';
 
 export default function Page() {
 
