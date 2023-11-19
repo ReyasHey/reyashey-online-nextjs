@@ -33,12 +33,12 @@ function Projects() {
                   This website is created to solve a very simple problem common in artists...
               </p>}
               img = "DailyMood.webp"
-              imgAlt = "Lemons Home Page"
+              imgAlt = "Daily Mood Board Page"
               imgWidth= {925}
               imgHeight= {925}
               imgOrientation = "portrait"
-              url = "https://reyashey.github.io/Lemons-Landing-Page/"
-              repo = "https://github.com/ReyasHey/Lemons-Landing-Page"
+              url = "https://reyashey.github.io/DailyMoodBoard/"
+              repo = "https://github.com/ReyasHey/DailyMoodBoard"
             />
 
             {/* Lemons Project */}
