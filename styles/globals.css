@@ -57,8 +57,28 @@ a {
   display: inline-block;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
+}
+
+hr {
+  opacity: 1;
+
+  border: none;
+
+  height: 0.1rem;
+  width: 110%;
+
+  position: relative;
+  left: -5%;
+
+  /* Set the hr color */
+  color: #FFF;  /* old IE */
+  background-color: #FFF;  /* Modern Browsers */
 }
 
 .btn {

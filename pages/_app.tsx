@@ -16,6 +16,7 @@ function Application({ Component, pageProps }) {
     <div className={poppins.className}>
       <Component {...pageProps} />
     </div>
+
   )
 }
 

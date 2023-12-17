@@ -6,7 +6,7 @@ interface props {
 
 function Technology(props: props) {
   return (
-    <li className={ classes.singleTech + ` col-3 mx-auto my-2 btn btn-dark` } >
+    <li className={ classes.singleTech + ` col mx-1 my-2 btn btn-dark` } >
       { props.text }
     </li>
   )

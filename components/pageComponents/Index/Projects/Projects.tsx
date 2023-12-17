@@ -1,5 +1,4 @@
-import Image from 'next/image'
-
+import Image from 'next/image';
 import BG from "../../../../public/imgs/BGs/projectsBG.webp"
 
 import Project from './Project/Project'
@@ -33,12 +32,12 @@ function Projects() {
                   This website is created to solve a very simple problem common in artists...
               </p>}
               img = "DailyMood.webp"
-              imgAlt = "Lemons Home Page"
+              imgAlt = "Daily Mood Board Page"
               imgWidth= {925}
               imgHeight= {925}
               imgOrientation = "portrait"
-              url = "https://reyashey.github.io/Lemons-Landing-Page/"
-              repo = "https://github.com/ReyasHey/Lemons-Landing-Page"
+              url = "https://reyashey.github.io/DailyMoodBoard/"
+              repo = "https://github.com/ReyasHey/DailyMoodBoard"
             />
 
             {/* Lemons Project */}
