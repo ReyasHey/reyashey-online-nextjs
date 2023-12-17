@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import BG from "../../../../public/imgs/BGs/projectsBG.webp"
 
 import Project from './Project/Project'
