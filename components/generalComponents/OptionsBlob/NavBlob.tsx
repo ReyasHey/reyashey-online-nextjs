@@ -1,6 +1,6 @@
 import Blob from "../../../public/imgs/Blobs/NavBlob.svg"
 import styles from "@styles/NavBlob.module.css"
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 import { FaBars, FaXmark } from "react-icons/fa6";
 
@@ -8,7 +8,7 @@ export default function NavBlob({ navToggled, navToggle }: { navToggled: boolean
   return (
     <button type="button" className={`btn ${styles.navBlobContainer}`} onClick={() => navToggle()}>
         <div style={{ width: "100%", height: "100%", position: "relative" }}>
-          <ExportedImage src={Blob} alt="Navigation Menu Toggle" className={styles.navBlob} />
+          <Image src={Blob} alt="Navigation Menu Toggle" className={styles.navBlob} />
           {
             navToggled
             ?

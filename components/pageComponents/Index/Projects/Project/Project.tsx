@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Link from "next/link";
 
 import styles from "@styles/Project.module.css"
@@ -40,7 +40,7 @@ function Project(props: props) {
 
             <div style={{ backgroundColor: props.bgColor }} className={ `${styles.imgBubble} ${props.imgOrientation === "landscape" ? styles.landscape : styles.portrait}` }>
                 <Link href={ props.url ?? '' } target="_blank" >
-                    <ExportedImage src={ `/imgs/Projects/${ props.img }` } alt={ props.imgAlt } width={ props.imgWidth } height={ props.imgHeight } />
+                    <Image src={ `/imgs/Projects/${ props.img }` } alt={ props.imgAlt } width={ props.imgWidth } height={ props.imgHeight } />
                 </Link>
 
                 <div className={ styles.linksWrapper }>

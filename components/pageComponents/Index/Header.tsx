@@ -1,6 +1,6 @@
 import Link from "next/link"
 import navBlob from "../../../public/imgs/Blobs/NavBlob.svg"
-import ExportedImage from "next-image-export-optimizer"
+import Image from "next/image"
 import { FaEnvelopeSquare, FaLinkedin } from "react-icons/fa"
 import { FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6"
 
@@ -18,7 +18,7 @@ function Header({ display }: { display: boolean }) {
         <nav className="sticky-nav-links-wrapper">
             <ul>
                 <li className="sticky-link-wrapper">
-                  <ExportedImage
+                  <Image
                     src={navBlob}
                     alt="Navigation Blob for Home"
                     style={{ height: "2rem" }}
@@ -27,7 +27,7 @@ function Header({ display }: { display: boolean }) {
                 </li>
 
                 <li className="sticky-link-wrapper">
-                  <ExportedImage
+                  <Image
                     src={navBlob}
                     alt="Navigation Blob for Technologies"
                     style={{ height: "2rem" }}
@@ -36,7 +36,7 @@ function Header({ display }: { display: boolean }) {
                 </li>
 
                 <li className="sticky-link-wrapper">
-                  <ExportedImage
+                  <Image
                     src={navBlob}
                     alt="Navigation Blob for Projects"
                     style={{ height: "2rem" }}
@@ -45,7 +45,7 @@ function Header({ display }: { display: boolean }) {
                 </li>
 
                 <li className="sticky-link-wrapper">
-                  <ExportedImage
+                  <Image
                     src={navBlob}
                     alt="Navigation Blob for Contacts"
                     style={{ height: "2rem" }}

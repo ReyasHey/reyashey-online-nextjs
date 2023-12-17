@@ -1,5 +1,3 @@
-import ExportedImage from 'next-image-export-optimizer'
-
 import BG from "../../../../public/imgs/BGs/projectsBG.webp"
 
 import Project from './Project/Project'
@@ -8,7 +6,7 @@ import SectionTitle from '@components/generalComponents/SectionTitle/SectionTitl
 function Projects() {
   return (
     <section id='Projects' style={{ position: "relative", padding: "5vw 0 1rem 0" }}>
-        <ExportedImage
+        <Image
           src={ BG }
           alt="Projects Background Image"
           style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%", zIndex: "-1" }}
