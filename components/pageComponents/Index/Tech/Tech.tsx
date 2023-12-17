@@ -11,7 +11,7 @@ function Tech() {
         <Image
             src={ rectangles }
             alt="Decorative Rectangle 1"
-            style={{ width: "100%", zIndex: "-1000000", marginTop: "-5rem", position: "relative", top: "-1rem", filter: "brightness(98%)" }}
+            style={{ width: "100%", height: "auto", zIndex: "-1000000", marginTop: "-5rem", position: "relative", top: "2.5rem", filter: "brightness(98%)" }}
         />
 
         <div style={{ padding: "3vw" }} className='container '>
