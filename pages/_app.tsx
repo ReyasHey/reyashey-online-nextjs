@@ -3,6 +3,7 @@ import "@styles/Footer.css"
 import "@styles/Header.css"
 
 import { Poppins } from "next/font/google";
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const poppins = Poppins({
     weight: ['400', '500', '600', '700', '800'],
@@ -12,10 +13,16 @@ const poppins = Poppins({
   });
 
 function Application({ Component, pageProps }) {
+
+  const queryClient = new QueryClient()
+
   return (
-    <div className={poppins.className}>
-      <Component {...pageProps} />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className={poppins.className}>
+        <Component {...pageProps} />
+      </div>
+    </QueryClientProvider>
+
   )
 }
 

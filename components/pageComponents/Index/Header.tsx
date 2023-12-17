@@ -1,16 +1,24 @@
 import Link from "next/link"
-import Image from "next/image"
 import navBlob from "../../../public/imgs/Blobs/NavBlob.svg"
+import ExportedImage from "next-image-export-optimizer"
+import { FaEnvelopeSquare, FaLinkedin } from "react-icons/fa"
+import { FaSquareGithub, FaSquareXTwitter } from "react-icons/fa6"
 
-function Header() {
+function Header({ display }: { display: boolean }) {
   return (
-    <header className="main-header">
-        <h1>ReyasHey</h1>
+    <div className="main-header text-center" style={{ backgroundColor: "#222222", display: display ? "flex" : "none" }}>
+        <header>
+          <h1>
+            ReyasHey
+          <hr className="my-3" />
+            <div style={{ fontWeight: "500", transform: "translateY(-50%)" }}>Portfolio</div>
+          </h1>
+        </header>
 
         <nav className="sticky-nav-links-wrapper">
             <ul>
                 <li className="sticky-link-wrapper">
-                  <Image
+                  <ExportedImage
                     src={navBlob}
                     alt="Navigation Blob for Home"
                     style={{ height: "2rem" }}
@@ -19,7 +27,7 @@ function Header() {
                 </li>
 
                 <li className="sticky-link-wrapper">
-                  <Image
+                  <ExportedImage
                     src={navBlob}
                     alt="Navigation Blob for Technologies"
                     style={{ height: "2rem" }}
@@ -28,7 +36,7 @@ function Header() {
                 </li>
 
                 <li className="sticky-link-wrapper">
-                  <Image
+                  <ExportedImage
                     src={navBlob}
                     alt="Navigation Blob for Projects"
                     style={{ height: "2rem" }}
@@ -37,7 +45,7 @@ function Header() {
                 </li>
 
                 <li className="sticky-link-wrapper">
-                  <Image
+                  <ExportedImage
                     src={navBlob}
                     alt="Navigation Blob for Contacts"
                     style={{ height: "2rem" }}
@@ -46,7 +54,22 @@ function Header() {
                 </li>
             </ul>
         </nav>
-    </header>
+
+        <div className="d-flex align-items-center justify-content-evenly" >
+          <Link href="mailto:reyas.hey@gmail.com" aria-label="Email link">
+            <FaEnvelopeSquare size={50} fill="grey" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/leandro-bonaccorso-8976a0237" target="_blank" aria-label="Linkedin link">
+            <FaLinkedin size={50} fill="grey" />
+          </Link>
+          <Link href="https://github.com/ReyasHey" target="_blank" aria-label="Github link">
+            <FaSquareGithub size={50} fill="grey" />
+          </Link>
+          <Link href="https://twitter.com/ReyasHey" target="_blank" aria-label="Twitter">
+            <FaSquareXTwitter size={50} fill="grey" />
+          </Link>
+        </div>
+    </div>
   )
 }
 

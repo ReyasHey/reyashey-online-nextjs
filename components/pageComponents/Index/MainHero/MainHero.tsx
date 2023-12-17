@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import styles from "@styles/Hero.module.css"
 
 import ReyasAvatar from "../../../../public/imgs/Reyas-avatar.webp"
@@ -12,7 +12,7 @@ import Blob3 from "../../../../public/imgs/Blobs/blob3.svg"
 function MainHero() {
   return (
     <section id='Home' style={{ padding: "0 20vw", position: "relative", height: "100vh", overflow: "hidden" }}>
-        <Image
+        <ExportedImage
             priority
             src={ BG }
             alt="Main Background Image"
@@ -32,7 +32,7 @@ function MainHero() {
         </div>
 
         <div className={ styles.heroImg }>
-            <Image
+            <ExportedImage
                 priority
                 src={ ReyasAvatar }
                 alt="Reyas' avatar"
@@ -43,15 +43,15 @@ function MainHero() {
         </div>
 
 
-        <Image src={ Blob3 } alt="Morphing Blob 1"
-            style={{ position: "absolute", top: "13vh", width: "10rem", height: "fit-content", filter: "blur(10px)" }}
+        <ExportedImage src={ Blob3 } alt="Morphing Blob 1"
+            style={{ position: "absolute", top: "13vh", width: "10rem", height: "fit-content", filter: "blur(10px)", zIndex: "-8" }}
         />
 
-        <Image src={ Blob2 } alt="Morphing Blob 1"
+        <ExportedImage src={ Blob2 } alt="Morphing Blob 1"
             style={{ position: "absolute", top: "33vh", left: "44vw", width: "14rem", height: "fit-content", filter: "blur(5px)", zIndex: "-8" }}
         />
 
-        <Image src={ Blob1 } alt="Morphing Blob 1"
+        <ExportedImage src={ Blob1 } alt="Morphing Blob 1"
             style={{ position: "absolute", top: "68vh", left: "25vw", width: "16rem", height: "fit-content", filter: "blur(1px)", }}
         />
 
